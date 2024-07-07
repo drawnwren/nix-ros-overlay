@@ -25,7 +25,7 @@ rosSelf: rosSuper: with rosSelf.lib; {
     # Fix build with boost 1.77
     patches = patches ++ [ (self.fetchpatch {
       url = "https://github.com/gazebosim/gazebo-classic/commit/660ae15f4af1f5ea8d9d50d4a24e4d91a94f9c2d.patch";
-      sha256 = "sha256-0"
+      sha256 = "sha256-0";
       stripLen = 1;
     }) ];
   });
